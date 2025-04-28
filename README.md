@@ -4,12 +4,42 @@
 
 ```mermaid
 mindmap
-  root((Mindmap))
-    A[Topic A]
-      A1[Subtopic A1]
-      A2[Subtopic A2]
-    B[Topic B]
-      B1[Subtopic B1]
-      B2[Subtopic B2]
+  root((rideapp))
+    A[Profile]
+      A1[Personal information]
+      A2[App's settings]
+    B[Home]
+      B1[KPI]
+      B2[Relevant activities]
+      B3[News]
+      B4[Friends]
     C[Google Link]
 ```
+
+
+**Note:** Click [Google Link](https://www.google.com) to visit Google.
+
+
+## 
+erDiagram
+    DRIVER ||--o{ ROUTE : places
+    DRIVER {
+        string name
+        string driverNumber
+        string email
+    }
+    ROUTE ||--|{ ITEM : contains
+    ROUTE {
+        int routeNumber
+        string name
+    }
+    ITEM {
+        string code 
+        int quantity
+        int score
+    }
+    TYPE ||--|{ ROUTE : define
+    TYPE {
+        int typeNumber
+        type name
+    }

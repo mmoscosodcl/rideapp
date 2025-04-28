@@ -21,6 +21,7 @@ mindmap
 
 
 ## Diagrama de Entidad Relación 
+
 erDiagram
     DRIVER ||--o{ ROUTE : places
     DRIVER {

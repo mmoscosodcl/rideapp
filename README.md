@@ -20,7 +20,7 @@ mindmap
 **Note:** Click [Google Link](https://www.google.com) to visit Google.
 
 
-## 
+## Diagrama de Entidad Relación 
 erDiagram
     DRIVER ||--o{ ROUTE : places
     DRIVER {

@@ -13,7 +13,10 @@ mindmap
       B2[Relevant activities]
       B3[News]
       B4[Friends]
-    C[Google Link]
+    C[Route]
+      B1[My Routes]
+      B2[Shared]
+      B3[Public Routes] 
 ```
 
 

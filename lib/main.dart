@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rideapp/screen/home.dart';
+import 'package:rideapp/screen/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
         
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'rideapp'),
+      //home: const MyHomePage(title: 'rideapp'),
+      home: const Splash(),
     );
   }
 }

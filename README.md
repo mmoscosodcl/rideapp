@@ -24,6 +24,7 @@ mindmap
 
 
 ## Diagrama de Entidad Relación 
+```mermaid
 erDiagram
     DRIVER ||--o{ ROUTE : places
     DRIVER {
@@ -46,3 +47,4 @@ erDiagram
         int typeNumber
         type name
     }
+```

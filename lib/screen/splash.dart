@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:rideapp/screen/home.dart';
 
 class Splash extends StatefulWidget { 
@@ -33,7 +34,14 @@ class _SplashState extends State<Splash> {
       body: Center( 
         child: Column( 
           mainAxisAlignment: MainAxisAlignment.center, 
-          children: [CircularProgressIndicator(), Text('Welcome..')], 
+          children: [
+            SvgPicture.asset(
+              'assets/icons/8723177_route_map_icon.svg',
+              semanticsLabel: 'rideapp',
+              width: 100,
+          ),
+            CircularProgressIndicator(), 
+            Text('Welcome..')], 
         ), 
       ), 
     ); 

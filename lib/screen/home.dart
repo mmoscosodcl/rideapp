@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rideapp/screen/like.dart';
 import 'package:rideapp/screen/profile.dart';
+import 'package:rideapp/screen/theme_demo_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -99,11 +100,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               }
             ),  
-            _buildCard(
+            buildDetailCard(
               context,
               title: 'News',
+              subtitle: 'Thinks that you like and dislike',
               imagePath: 'assets/images/news.jpg',
-              onTap: () => _snackBarMessage(context, 'News')
+              amount: 10,
+              //onTap: () => _snackBarMessage(context, 'News')
+              onGoTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const ThemeDemoPage()),
+                );
+              }
             ),
             _buildCard(
               context,
